@@ -8,7 +8,7 @@ fn main() {
         .arg(Arg::with_name("name").index(1).required(true))
         .get_matches();
 
-    println!("Hello, {}! test!", matches.value_of("name").unwrap());
+    println!("Hello, {}! test2!", matches.value_of("name").unwrap());
 
     // Infinite loop - otherwise the application will quit and the container
     // will be launched again and again and your logs will be flooded with
